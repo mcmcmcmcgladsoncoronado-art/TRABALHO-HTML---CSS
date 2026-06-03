@@ -8,6 +8,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f1ea;
     color: #2d2722;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -41,9 +44,11 @@ header nav ul li {
 }
 
 main {
+    flex: 1;
     margin: 0 auto;
-    max-width: 1180px;
+    max-width: 1240px;
     padding: 2rem;
+    width: 100%;
 }
 
 .banner {
@@ -82,7 +87,7 @@ main {
 
 .lista-livros {
     display: grid;
-    gap: 1.5rem;
+    gap: 1.8rem;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -93,7 +98,7 @@ main {
     box-shadow: 0 8px 20px rgba(45, 39, 34, 0.08);
     color: #2d2722;
     display: block;
-    padding: 1rem;
+    padding: 1.2rem;
     text-align: center;
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -107,14 +112,14 @@ main {
 .item-livro img {
     background: #ddd;
     border-radius: 6px;
-    height: 270px;
+    height: 320px;
     margin-bottom: 1rem;
     object-fit: cover;
     width: 100%;
 }
 
 .item-livro h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.4rem;
 }
 
@@ -141,7 +146,7 @@ main {
     box-shadow: 0 8px 20px rgba(45, 39, 34, 0.08);
     display: none;
     gap: 2rem;
-    grid-template-columns: 1fr 240px;
+    grid-template-columns: 1fr 280px;
     margin-top: 1.5rem;
     padding: 1.5rem;
 }
@@ -176,7 +181,7 @@ main {
 
 .detalhe-livro img {
     border-radius: 6px;
-    height: 330px;
+    height: 380px;
     object-fit: cover;
     width: 100%;
 }
@@ -262,6 +267,20 @@ button:hover {
     border-left: 5px solid #68462f;
     border-radius: 8px;
     padding: 1.5rem;
+}
+
+.pagina-sobre {
+    max-width: 850px;
+}
+
+.pagina-sobre h1 {
+    color: #68462f;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pagina-sobre p {
+    line-height: 1.7;
 }
 
 footer {
